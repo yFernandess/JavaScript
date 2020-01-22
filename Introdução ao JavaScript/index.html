@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Curso JavaScript</title>
+  </head>
+  <body>
+    <script>
+      var nome = "Yuri";
+
+      var aluno = {
+        nome: 'Yuri',
+        idade: '30',
+        peso: 80.5,
+        humano: true
+      };
+
+      var x = 10, y = 5;
+      
+      //função
+
+      function soma(numero1, numero2) {
+        var resultado = numero1 + numero2;
+
+        return resultado;
+      }
+
+      var resultado = soma(1, 2);
+      console.log(resultado);
+      // condição
+
+      function retornaSexo(sexo) {
+        // M, F
+        // Masculino, Feminino
+        
+        if (sexo === 'M') {
+          return "Masculino";
+        } else if (sexo === 'F') {
+          return "Feminino";
+        } else {
+          return 'Outro';
+        }
+
+        switch (sexo) {
+          case 'M':
+            return "Masculino";
+          case 'F':
+            return "Feminino";
+          default:
+            return "Outro";
+        }
+      }
+      var sexo = retornaSexo('F');
+      console.log(sexo);
+
+      // Operadores Lógicos
+      // AND (&&), OR (pipe pipe), NOT (!==)
+
+      var sexo2 = 'F', idade = 23;
+
+      if (sexo2 === 'M' && idade >= 18) {
+        console.log('OK');
+      }
+
+      if (sexo2 !== 'M') {
+        console.log('OK');
+      }
+
+      var sexo3 = 'M';
+      var masculino = sexo3 === 'M';
+      console.log(masculino);
+
+      // for, while
+
+      // for (var i = 0; i <= 100; i++) {
+      //  console.log(i);
+      // }
+
+      var j = 0;
+      while (j <= 100) {
+        console.log(j);
+        j++;
+      }
+
+      // Intervalo e timeout
+      function exibeAlgo() {
+        console.log("Hello World");
+      }
+      // setInterval(exibeAlgo, 1000);
+      setTimeout(exibeAlgo, 5000);
+    </script>
+  </body>
+</html>
